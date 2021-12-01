@@ -1,5 +1,5 @@
-# AOC2021
-Advent of Code 2021
+# AOC2020
+Advent of Code 2020
 
 
 Python3, as always...
