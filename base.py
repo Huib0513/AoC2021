@@ -7,10 +7,14 @@ import re
 input = ["939","7,13,x,x,59,x,31,19"]
 
 # input integers separated by commas
-#input= [int(i) for i in open(os.path.basename(__file__).split(".")[0]+'.input').read().split(",")]
+#input= [int(i) for i in open("input_'+os.path.basename(__file__).split(".")[0]+'.txt').read().split(",")]
+
+# input integers on complete lines
+input = [int(i) for i in open('input_'+os.path.basename(__file__).split(".")[0]+'.txt').read().splitlines()]
 
 # input complete lines
-input = open(os.path.basename(__file__).split(".")[0]+'.input').read().splitlines()
+#input = open('input_'+os.path.basename(__file__).split(".")[0]+'.txt').read().splitlines()
+
 
 def solve1():
     print("Deel 1: No")
